@@ -59,7 +59,8 @@ view: discipline {
   dimension: discipline_response {
     type: string
     description: "Discipline response description"
-    sql: case when ${TABLE}.Discipline_Response is null then 'No Response' else ${TABLE}.Discipline_Response end;;
+    sql: case when ${TABLE}.Discipline_Response is null then 'No Response' else
+    replace(replace(${TABLE}.Discipline_Response, ' (DO NOT include Lunch, Before/After School Detentions)', ''), ' (This code to be used for incidents involving a firearm. FS086 - Students Involved with Firearms File Specification)','') end;;
   }
 
   dimension: discipline_response_category {
