@@ -1,14 +1,14 @@
-connection: "dm02"
+connection: "dm02_test"
 
 # include all the views
 include: "/views/**/*.view"
 
-datagroup: ped_bi_default_datagroup {
-  sql_trigger: SELECT max(modify_date) FROM sys.tables;;
-  max_cache_age: "24 hours"
-}
+##datagroup: ped_bi_test_default_datagroup {
+##  sql_trigger: SELECT max(modify_date) FROM sys.tables;;
+##  max_cache_age: "24 hours"
+##}
 
-persist_with: ped_bi_default_datagroup
+##persist_with: ped_bi_default_datagroup
 
 #explore: assessment_rea {
 #  join: districts {

@@ -16,8 +16,8 @@ view: prior_student_location {
           ) x
           where rank=1
        ;;
-    datagroup_trigger: ped_bi_default_datagroup
-    indexes: ["student_id", "school_year", "student_snapshot_date"]
+   ## datagroup_trigger: ped_bi_test_default_datagroup
+    ##indexes: ["student_id", "school_year", "student_snapshot_date"]
   }
 
   dimension: student_id {

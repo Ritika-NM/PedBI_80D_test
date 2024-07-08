@@ -9,8 +9,8 @@ view: prior_snapshot_values {
            )  x
            where rank=1
        ;;
-    datagroup_trigger: ped_bi_default_datagroup
-    indexes: ["student_id", "student_snapshot_date"]
+   ## datagroup_trigger: ped_bi_test_default_datagroup
+    ##indexes: ["student_id", "student_snapshot_date"]
   }
 
   # Define your dimensions and measures here, like this:
