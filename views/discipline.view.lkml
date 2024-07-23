@@ -230,19 +230,19 @@ view: discipline {
 
   dimension: student_id {
     type: string
-    hidden: yes
+   ## hidden: yes
     sql: ${TABLE}.Student_ID ;;
   }
 
   dimension: student_key {
     type: number
-    hidden: yes
+  ##  hidden: yes
     sql: ${TABLE}.Student_Key ;;
   }
 
   dimension: student_name {
     type: string
-    hidden: yes
+  ##  hidden: yes
     sql: ${TABLE}.Student_Name ;;
   }
 

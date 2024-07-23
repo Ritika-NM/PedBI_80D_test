@@ -742,7 +742,7 @@ explore: homeschool_students {
   join: school_year {
     relationship: many_to_one
     type: inner
-    sql_on: ${homeschool_students.school_year}=${school_year.school_year} ;;
+    sql_on: ${homeschool_students.school_year}=${school_year.school_year} COLLATE SQL_Latin1_General_CP850_BIN ;;
   }
 
 }
