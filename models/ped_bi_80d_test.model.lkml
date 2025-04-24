@@ -715,7 +715,7 @@ explore: attendance_summary {
   join: locations {
     relationship: many_to_one
     type: left_outer
-    sql_on: ${attendance_summary.location_id}} = ${locations.location_id}
+    sql_on: ${attendance_summary.location_id}= ${locations.location_id}
       and ${attendance_summary.school_year_date} = ${locations.school_year_end_date}
       and ${attendance_summary.district_code} = ${locations.district_code};;
   }
