@@ -355,6 +355,13 @@ explore: staff_snapshot {
   }
 }
 
+explore: course_certification_requirements {
+  join: period {
+    relationship: many_to_one
+    type: inner
+    sql_on: ${course_certification_requirements.school_year_date}=${period.school_year_end_date}  ;;
+}
+ }
 explore: staff_development_activity {
   join: staff_snapshot {
     relationship: many_to_one
