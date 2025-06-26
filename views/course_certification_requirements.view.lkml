@@ -9,6 +9,11 @@ view: course_certification_requirements {
     type: string
     sql: ${TABLE}.Certification_Level_Code ;;
   }
+
+  dimension: district_code {
+    type: string
+    sql: ${TABLE}.District_Code ;;
+  }
   dimension: certification_type_code {
     type: string
     sql: ${TABLE}."Certification_Type Code" ;;
