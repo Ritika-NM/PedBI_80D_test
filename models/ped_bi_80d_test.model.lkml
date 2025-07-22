@@ -361,6 +361,12 @@ explore: course_certification_requirements {
     type: inner
     sql_on: ${course_certification_requirements.school_year_date}=${period.school_year_end_date}  ;;
 }
+  join: districts {
+    relationship: many_to_one
+    type: inner
+    sql_on: ${course_certification_requirements.district_code} = ${districts.district_code}
+      and ${course_certification_requirements.school_year_date} = ${districts.school_year_end_date};;
+  }
  }
 explore: staff_development_activity {
   join: staff_snapshot {

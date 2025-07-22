@@ -1,8 +1,8 @@
 view: cte_students_clusters {
   sql_table_name: StateDB.cte_students_clusters ;;
 
-  dimension: course_count {
-    type: number
+  measure: course_count {
+    type: sum
     sql: ${TABLE}.Course_Count ;;
   }
 
